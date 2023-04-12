@@ -3,34 +3,34 @@ window.addEventListener('load', () => {
     const ctx = canvas.getContext('2d')
   
     const bgImg = new Image()
-    bgImg.src = '/images/road.png'
+    bgImg.src = './images/road.png'
 
     const bgImg2 = new Image()
-    bgImg2.src = '/images/forest.png'
+    bgImg2.src = './images/forest.png'
   
     const carImg = new Image()
-    carImg.src = '/images/yellowcar.png'
+    carImg.src = './images/yellowcar.png'
 
     const carImg2 = new Image()
-    carImg2.src = '/images/whitecar.png'
+    carImg2.src = './images/whitecar.png'
 
     const teslaImg = new Image()
-    teslaImg.src = '/images/tesla.png'
+    teslaImg.src = './images/tesla.png'
 
     const baguetteImg = new Image()
-    baguetteImg.src = '/images/baguette.png'
+    baguetteImg.src = './images/baguette.png'
 
     let joshImg = new Image()
-    joshImg.src = '/images/joshson.png'
+    joshImg.src = './images/joshson.png'
 
     const mKingImg = new Image()
-    mKingImg.src = '/images/baguetteking.png'
+    mKingImg.src = './images/baguetteking.png'
 
     const matImg = new Image()
-    matImg.src = '/images/baguettekingmat.png'
+    matImg.src = './images/baguettekingmat.png'
 
     const rockImg = new Image()
-    rockImg.src = '/images/rock.png'
+    rockImg.src = './images/rock.png'
 
     const playBtn = document.getElementById('play-button');
     const startBtn = document.getElementById('start-button');
@@ -443,7 +443,7 @@ window.addEventListener('load', () => {
 
     const animate3 = () => {
       ctx.drawImage(bgImg2, 0, 0, canvas.width, canvas.height)
-      mKingImg.src = '/images/baguettekingmat.png'
+      mKingImg.src = './images/baguettekingmat.png'
       drawJosh()
       drawmKing()
       drawHp()
@@ -554,7 +554,7 @@ window.addEventListener('load', () => {
       carX = 30
       joshHealth = 10
       mKingHealth = 20
-      mKingImg.src = '/images/baguetteking.png'
+      mKingImg.src = './images/baguetteking.png'
   
       animate()
     }
@@ -629,7 +629,7 @@ window.addEventListener('load', () => {
         carX = 30
         joshHealth = 10
         mKingHealth = 20
-        mKingImg.src = '/images/baguetteking.png'
+        mKingImg.src = './images/baguetteking.png'
         startGame()
     })
 
