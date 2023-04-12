@@ -418,7 +418,11 @@ window.addEventListener('load', () => {
 
         // animateId = requestAnimationFrame(animate2)
         if (joshHealth <= 0) {
-          gameOver
+          cancelAnimationFrame(animateId)
+          document.querySelector('#game-board').style.display = 'none'
+          document.querySelector('.game-over').style.display = 'block'
+        } else {
+          animateId = requestAnimationFrame(animate3)
         }
 
         if (gameOver) {
